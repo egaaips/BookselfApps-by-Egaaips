@@ -1,0 +1,201 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: pink;
+}
+
+header {
+    display: flex;
+    width: 100%;
+    background-color: lightskyblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-sizing: border-box;
+    position: fixed;
+}
+
+h1 {
+    padding: 30px 0;
+}
+
+.search {
+    padding: 20px;
+}
+
+.search input {
+    padding: 8px;
+    width: 200px;
+    border-radius: 16px;
+    border: 1px;
+}
+
+.search button {
+    padding: 8px 20px;
+    position: relative;
+    left: -57px;
+    border-radius: 20px;
+    border: none;
+    background-color: pink;
+    color: white;
+}
+
+.booklistWrapper {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    padding: 120px 30px 30px;
+}
+
+.uncompleteBookList {
+    padding: 30px;
+    background-color: pink;
+    border-radius: 0 40px 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+}
+
+.completeBookList {
+    padding: 30px;
+    background-color: pink;
+    border-radius: 40px 0px 40px 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+}
+
+.bookCard {
+    padding: 15px 20px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    box-sizing: border-box;
+}
+
+.actions {
+    display: inline-flex;
+    gap: 10px;
+    height: fit-content;
+}
+
+.move,
+.delete,
+.edit {
+    padding: 8px 9px;
+    border-radius: 20px;
+    border: none;
+    background-color: lightskyblue;
+}
+
+.fa-solid,
+.fas {
+    color: white;
+}
+
+.actions button {
+    cursor: pointer;
+}
+
+.addBook {
+    position: fixed;
+    right: 0;
+    top: 520px;
+    margin-right: 10px;
+}
+
+.addBookBtn {
+    padding: 18px 20px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightskyblue;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 100vh;
+    display: none;
+}
+
+.modalWrapper {
+    padding: 40px;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0 0 0 / 80%);
+}
+
+.modalContent {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: fit-content;
+    background-color: lightskyblue;
+    padding: 40px;
+    border-radius: 20px;
+    position: relative;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+}
+
+.input {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.input_inline {
+    display: flex;
+    gap: 20px;
+}
+
+.close {
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 0;
+    margin-right: 15px;
+    margin-top: 9px;
+    cursor: pointer;
+}
+
+#bookSubmit {
+    padding: 7px 30px;
+    border-radius: 20px;
+    background-color: pink;
+    font-size: 1.1rem;
+    margin-top: 25px;
+    width: 100%;
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookself App | By Egaaips</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Bookself App</h1>
+        <div class="search">
+            <input type="text" name="" id="search" placeholder="Search...">
+            <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="booklistWrapper">
+
+            <div class="uncompleteBookList">
+                <h2>Belum selesai dibaca</h2>
+                <div class="bookCard">
+                    <div class="bookInfo">
+                        <h2 class="title">Book Title</h2>
+                        <p class="author">Author Name</p>
+                        <p class="year">Year</p>
+                    </div>
+                    <div class="actions">
+                        <button class="move">
+                            <i class="fa-solid fa-circle-check"></i>
+                        </button>
+                        <button class="delete">
+                            <i class="fas fa-trash"></i>
+                        </button>
+                        <button class="edit">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="completeBookList">
+                <h2>Selesai dibaca</h2>
+                <div class="bookCard">
+                    <div class="bookInfo">
+                        <h2 class="title">Book Title</h2>
+                        <p class="author">Author Name</p>
+                        <p class="year">Year</p>
+                    </div>
+                    <div class="actions">
+                        <button class="move">
+                            <i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="delete">
+                            <i class="fas fa-trash">
+                            </i>
+                        </button>
+                        <button class="edit">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="addBook">
+            <button class="addBookBtn">
+                <i class="fa-solid fa-plus fa-2x"></i>
+            </button>
+        </section>
+
+        <section class="modal" style="display: none;">
+            <div class="modalWrapper">
+                <div class="modalContent">
+                    <div class="close">
+                        <i class="fa-solid fa-xmark fa-2x"></i>
+                    </div>
+                    <div class="modalTitle">
+                        <h2>Tambah Buku</h2>
+                    </div>
+                    <div class="modalForm">
+                        <form id="bookForm">
+                            <div class="input">
+                                <label for="inputBookTitle">Judul</label>
+                                <input id="inputBookTitle" type="text" required>
+                            </div>
+                            <div class="input">
+                                <label for="inputBookAuthor">Penulis</label>
+                                <input id="inputBookAuthor" type="text" required>
+                            </div>
+                            <div class="input">
+                                <label for="inputBookYear">Tahun</label>
+                                <input id="inputBookYear" type="number" required>
+                            </div>
+                            <div class="input_inline">
+                                <label for="inputBookIsComplete">Selesai dibaca</label>
+                                <input id="inputBookIsComplete" type="checkbox">
+                            </div>
+                            <div class="input_inline">
+                                <button id="bookSubmit" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
